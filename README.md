@@ -1,3 +1,4 @@
 # QuaLake_for_minio
 QuaLake_for_minio is minio-based Distributed File Storage and Data Lake with FoundationDB(FDB) as meta-data management, and is compatible with most of HDFS library API. QuaLake_for_minio aims to provide the middle model-layer between underlying minio storage layer and upper computing layer with Upsert&Delete ACID properties, pluggable index, and flexible schema management/evolution such as table/json/document schema(using Apache Avro or MessagePack) and columnar schema(using Apache Parquet or CarbonData). QuaLake_for_minio can be accessed from Presto/Trino and Apache Flink, and supports streaming ingestion from Flink CDC or Apache Kafka.
+
 QuaLake_for_minio can be considered as the 0.x version of our Overall QuaStore Framework which will adopt Apache License 2.0, and be optimized for trillions of small files management using compaction or/and fallocate/punch hole.
